@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     </header>
     <main>
         <form id="poem-form">
-            <input type="text" placeholder="Enter the topic of the poem..." required autofocus autocomplete="off" class="topic"/>
+            <input type="text" placeholder="Enter the topic of the poem..." required autofocus autocomplete="off" class="topic" id="user-topic"/>
             <input type="submit" class="submit-button"/>
         </form>
         <div class="poem" id="poem"></div>
