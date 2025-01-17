@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     
-    <title>AI Poem Project</title>
+    <title>AI Poem Generator</title>
 </head>
 <body>
     <div class="container">
     <header>
-        <h1>AI Poems</h1>
+        <h1>AI Poem Generator</h1>
     </header>
     <main>
-        <form>
+        <form id="poem-form">
             <input type="text" placeholder="Enter the topic of the poem..." required autofocus autocomplete="off" class="topic"/>
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="poem">
-            Dainty petals, fancy flair,
-            <br />
-            dancing in the warm, sweet air.
-        </div>
+        <div class="poem" id="poem"></div>
     </main>
 </div>
     <footer>This AI project was coded by Anne Sura, and is <a href="https://github.com/annesura/ai-poem-project" target="_blank">open sourced on Github</a> and <a href="https://ai-poems-coded-by-anne.netlify.app/" target="_blank">hosted on Netlify</a>. </footer>
